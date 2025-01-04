@@ -1,0 +1,739 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>１０９シネマズプレミアム新宿 | 109CINEMAS</title>
+  <meta name="description" content="１０９シネマズプレミアム新宿の公式ページ。上映作品・上映スケジュール・施設案内など、最新情報はこちらから。">
+
+  <meta property="og:url" content="https://109cinemas.net/premiumshinjuku/"><!-- og:url ページに合わせて書き換える -->
+  <meta property="og:title" content="INDEX - １０９シネマズプレミアム新宿 | 109CINEMAS"><!-- og:title ページに合わせて書き換える -->
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://109cinemas.net/img/premium/shinjuku/ogp.png">
+  <meta property="og:description" content="１０９シネマズプレミアム新宿の公式ページ。上映作品・上映スケジュール・施設案内など、最新情報はこちらから。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap&text=0123456789:/~-,%2B" rel="stylesheet">
+  <!-- / google fonts -->
+
+  <!-- ICON -->
+  <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <!-- / ICON -->
+
+  <!-- 共通部分 -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/premium/common.js?ver=20230224"></script>
+  <link rel="stylesheet" href="/css/premium/common.css?ver=20230224">
+  <!-- / 共通部分 -->
+
+  <!-- 個別ページ編集領域 -->
+  <script src="/js/emergency.js"></script>
+  <script src="/js/jquery.flexslider-min.js"></script>
+  <script src="/js/flipsnap.min.js"></script>
+  <script src="/js/premium/index.js?ver=20230318"></script>
+  <script src="/js/premium/schedules.js?ver=20230404"></script>
+  <script src="/js/jquery.colorbox-min.js"></script>
+  <link href="/css/colorbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/premium/index.css?ver=20230224">
+  <link rel="stylesheet" href="/css/premium/schedules.css?ver=20230321">
+  <!-- / 個別ページ編集領域 -->
+</head>
+<body class="index"><!-- ページに合わせてclass名を書き換える -->
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LMG8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-LMG8');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+  var eis = [];
+  var closedids = sessionStorage.getItem('closedids');
+  closedids = JSON.parse(closedids);
+  if (closedids == null) {
+    closedids = [];
+  }
+</script>
+
+
+  <!-- 劇場選択バー -->
+  <header id="top" class="common-site-header">
+    <div class="common-header-select-inner">
+      <h1><a href="/premiumshinjuku/"><img src="/img/premium/logo-109premium.png" width="150" height="35" alt="109CINEMAS premium"></a></h1>
+      <div class="common-header-select">
+        <select class="common-theatre-select" onchange="location.href=value;">
+          <option value="/" selected="">劇場を選ぶ</option>
+          <optgroup label="東北">
+            <option value="/tomiya/">富谷</option>
+          </optgroup>
+          <optgroup label="関東"><option value="/premiumshinjuku/">１０９シネマズプレミアム新宿</option>
+            <option value="/sano/">佐野</option>
+            <option value="/takasaki/">高崎</option>
+            <option value="/shobu/">菖蒲</option>
+            <option value="/kiba/">木場</option>
+            <option value="/futakotamagawa/">二子玉川</option>
+            <option value="/grandberrypark/">グランベリーパーク<!-- (町田) --></option>
+            <option value="/kohoku/">港北</option>
+            <option value="/kawasaki/">川崎</option>
+            <option value="/shonan/">湘南</option>
+            <option value="/movil/">ムービル<!-- (横浜) --></option>
+          </optgroup>
+          <optgroup label="東海">
+            <option value="/nagoya/">名古屋</option>
+            <option value="/yokkaichi/">四日市</option>
+            <option value="/meiwa/">明和</option>
+          </optgroup>
+          <optgroup label="近畿">
+            <option value="/osaka-expocity/">大阪エキスポシティ</option>
+            <option value="/minoh/">箕面</option>
+            <option value="/hatkobe/">HAT神戸</option>
+          </optgroup>
+          <optgroup label="中国">
+            <option value="/hiroshima/">広島</option>
+          </optgroup>
+          <optgroup label="九州">
+            <option value="/saga/">佐賀</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="common-header-select">
+        <select class="common-language-select" onchange="location.href=value;">
+          <option value="/premiumshinjuku/">JP</option>
+          <option value="/en/premiumshinjuku/">EN</option>
+        </select>
+      </div>
+    </div>
+    <div class="common-sp-menu-trigger _only-sp"><button>menu</button></div>
+    <!-- #top -->
+  </header>
+  <!-- / 劇場選択バー -->
+
+  <!-- グローバルメニュー -->
+  <nav class="common-navigation common-header-navigation">
+    <a class="common-navigation-logo" href="/premiumshinjuku/">
+      <img src="/img/premium/shinjuku/logo-premiumshinjuku.png" alt="109CINEMAS PREMIUM SHINJUKU" width="442" height="56">
+    </a>
+    <div class="common-navigation-block">
+      <ul class="common-navigation-list">
+        <li class="common-navigation-index _only-sp"><a href="/premiumshinjuku/">TOP</a></li>
+        <li class="common-navigation-schedule"><a href="/premiumshinjuku/#schedule">SCHEDULE</a></li>
+        <li class="common-navigation-movies"><a href="/premiumshinjuku/movies.html">MOVIES</a></li>
+        <li class="common-navigation-news"><a href="/premiumshinjuku/news/">NEWS</a></li>
+        <li class="common-navigation-experience"><a href="/premiumshinjuku/experience.html">EXPERIENCE</a></li>
+        <li class="common-navigation-theaters"><a href="/premiumshinjuku/theaters.html">THEATERS</a></li>
+        <li class="common-navigation-admission"><a href="/premiumshinjuku/admission.html">PRICE</a></li>
+        <li class="common-navigation-access"><a href="/premiumshinjuku/access.html">ACCESS</a></li>
+        <li class="common-sns-icons"><a class="common-icon-twitter" href="https://twitter.com/109_PREMIUM_SJ" target="_blank">X</a><a class="common-icon-instagram" href="https://www.instagram.com/109cinemas_premium/" target="_blank">instagram</a></li>
+      </ul>
+      <div class="common-sp-submenu _only-sp">
+        <ul>
+          <li><a href="https://cinema.109cinemas.net/cgi-bin/pc/login.cgi?tsc=X1" target="_blank">マイページログイン</a></li>
+          <li><a href="/premiumshinjuku/refreshments.html">フード＆ドリンク</a></li>
+          <li><a href="/pointcard.html">シネマポイント会員</a></li>
+          <li><a href="/premiumshinjuku/news/#event">イベント／キャンペーン</a></li>
+          <li><a href="https://cinema.109cinemas.net/cgi-bin/pc/rsvhst/list_shw.cgi?tsc=X1" target="_blank">購入チケット照会</a></li>
+          <li><a href="/premiumshinjuku/access.html#businesshour">営業時間／音声案内</a></li>
+        </ul>
+        <div class="common-sp-navigation-footer">
+          <div class="common-sns-icons"><a class="common-icon-twitter" href="https://twitter.com/109_PREMIUM_SJ" target="_blank"><img src="/img/premium/icon-x.png" alt="X" width="22" height="18"></a><a class="common-icon-instagram" href="https://www.instagram.com/109cinemas_premium/" target="_blank"><img src="/img/premium/icon-instagram.png" alt="instagram" width="22" height="22"></a></div>
+          <div class="common-select-language"><a href="/premiumshinjuku/" class="common-language-active">JP</a><a href="/en/premiumshinjuku/">EN</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- / グローバルメニュー -->
+
+  <!-- コンテンツラップ -->
+  <main>
+    <!-- スライダー -->
+    <div class="flexslider index-slider-block">
+      <div id="slide-banner" class="flex-viewport">
+        <ul class="slides">
+          <li><a href="https://109cinemas.net/premiumshinjuku/news/8545.html?utm_source=web&amp;amp;utm_medium=bigbanner&amp;amp;utm_campaign=ryuichisakamoto2412"><img alt="プレコレ第4弾　新宿のみ　～2025.3.27" src="/media/W1siZiIsIjIwMjQvMTEvMjUvMThfMThfMjdfMTkyXzI0MTEyMV80XzEwOWNwc19yc3BjX2Jucl9zbGlkZS5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/241121-4_109cps_rspc_bnr_slide.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/saion/"><img alt="SAION -SR EDITION-" src="/media/W1siZiIsIjIwMjMvMDYvMTMvMTBfMTlfMTZfNDk1X3NhaW9uX3NoaW5qdWt1X2Jhbm5lcl9maXhfMTkyMF85NjBfMjMwNjEyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/saion_shinjuku_banner_fix_1920%C3%97960_230612.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/premiumshinjuku/special/"><img alt="プレミアム新宿特設ページ" src="/media/W1siZiIsIjIwMjMvMDMvMjcvMTRfMTRfNTNfMzM0X3NsaWRlcjEucG5nIl0sWyJwIiwidGh1bWIiLCIxMjAweDYwMCMiXV0/slider1.png" /></a></li>
+          <li><a href="https://109cinemas.net/premiumshinjuku/news/8575.html"><img alt="『シネマティックコンサートツアー：Chageのずっと細道〜東西南北〜』開催決定！" src="/media/W1siZiIsIjIwMjQvMTIvMjMvMTdfNDRfMDFfMTJfXy5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/%E3%82%B7%E3%83%8D%E3%83%9E%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%88%E3%83%84%E3%82%A2%E3%83%BC.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/events/roz/"><img alt="『野生の島のロズ』2大WEBキャンペーン(第一弾会員限定)" src="/media/W1siZiIsIjIwMjQvMTIvMjAvMTZfMzhfMzlfNDFfcm96X2JucjE5MjBfOTYwLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/roz_bnr1920_960.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/pointcard.html"><img alt="WEB入会おしらせ" src="/media/W1siZiIsIjIwMjQvMTIvMDMvMThfNTFfNTBfMjE1XzI0MTEwN18xXzEwOWNfY2luZW1hcG9pbnRfYm5yXzE5MjB4OTYwX2Juci5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/241107-1_109c_cinemapoint_bnr_1920x960_bnr.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/premiumshinjuku/news/7509.html"><img alt="新宿THE BAR" src="/media/W1siZiIsIjIwMjMvMTIvMDcvMTdfNTdfMTdfNjUyX1NsaWRlX0Jhbm5lcl9Td2VldHMuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDYwMCMiXV0/Slide-Banner_Sweets.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/premiumshinjuku/refreshments.html"><img alt="ウェルカムコンセッション　新宿" src="/media/W1siZiIsIjIwMjMvMTIvMDcvMThfMThfMjVfMTM4X1NsaWRlX0Jhbm5lcl9Gb29kcy5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/Slide-Banner_Foods.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/service/giftticket/"><img alt="１０９シネマズプレミアム新宿　ギフトチケット" src="/media/W1siZiIsIjIwMjQvMDcvMTkvMTRfMThfMDFfMTA1X0hQX19fLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/HP%E3%83%90%E3%83%8A%E3%83%BC_%E3%82%AE%E3%83%95%E3%83%88%E3%83%81%E3%82%B1%E3%83%83%E3%83%88.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/news/8569.html"><img alt="12/5(木)～『モアナと伝説の海２』アンケートキャンペーン実施決定！" src="/media/W1siZiIsIjIwMjQvMTEvMjkvMTdfMzJfNDRfODk5X18yX1dFQl9fUVJfLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/%E3%83%A2%E3%82%A2%E3%83%8A2_WEB%E3%83%90%E3%83%8A%E3%83%BC_QR%E7%84%A1.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/news/8607.html"><img alt="12/19(木)～『ライオン・キング：ムファサ』アンケートキャンペーン実施決定！" src="/media/W1siZiIsIjIwMjQvMTIvMjAvMTBfNTVfMjBfMzNfX19XRUJfX1FSXy5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/%E3%83%A0%E3%83%95%E3%82%A1%E3%82%B5_WEB%E3%83%90%E3%83%8A%E3%83%BC_QR%E7%84%A1.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/events/lionking-mufasa/"><img alt="『ムファサ：ライオンキング』WEBキャンペーン(新宿あり)" src="/media/W1siZiIsIjIwMjQvMTIvMDYvMTBfMTJfNTBfNzA1X2xpb25raW5nX211ZmFzYV9ibnIxOTIwXzk2MC5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/lionking-mufasa_bnr1920_960.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/events/lotr-movie/"><img alt="『ロード・オブ・ザ・リング/ローハンの戦い』SNSキャンペーン(新宿あり)" src="/media/W1siZiIsIjIwMjQvMTIvMTMvMTBfMjdfNTVfNTAwX2xvdHJfbW92aWVfYm5yMTkyMF85NjAuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDYwMCMiXV0/lotr-movie_bnr1920_960.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/events/grandmaison/"><img alt="『グランメゾン・パリ』WEBキャンペーン(新宿あり)" src="/media/W1siZiIsIjIwMjQvMTIvMTMvMTBfMjlfMTNfNTI4X2dyYW5kbWFpc29uX2JucjE5MjBfOTYwLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/grandmaison_bnr1920_960.jpg" /></a></li>
+          <li><a href="https://wwws.warnerbros.co.jp/saibou-movie/wonderland.html"><img alt="全国『はたらく細胞』ワンダーランドキャンペーン" src="/media/W1siZiIsIjIwMjQvMTEvMDEvMTlfMjFfMDhfNDkyX3NhaWJvdV93bGNwX2JucjE5MjB4OTYwLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/saibou_wlcp_bnr1920x960.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/theater_rental/"><img alt="貸館について" src="/media/W1siZiIsIjIwMjQvMDYvMjgvMTRfMTdfMDJfMzkyXzEwOXRoZWF0ZXJfcmVudGFsXzE5MjB4OTYwLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg2MDAjIl1d/109theater-rental_1920x960.jpg" /></a></li>
+          <li><a href="https://mstby.com/mustbuy2024/?utm_source=109mail"><img alt="NBCユニバーサル「映画ファン感謝祭2024」" src="/media/W1siZiIsIjIwMjQvMTIvMTIvMTJfNTBfMTdfNjA2X19fMTA5Xy5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/%E6%98%A0%E7%94%BB%E3%83%95%E3%82%A1%E3%83%B3%E6%84%9F%E8%AC%9D%E7%A5%AD_109%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA%E3%82%86%E3%82%81%E3%81%8C%E4%B8%98%E7%94%A8%E3%83%90%E3%83%8A%E3%83%BC%E7%B4%8D%E5%93%81.jpg" /></a></li>
+          <li><a href="https://109cinemas.net/news/8549.html"><img alt="109シネマズ×ディズニープラス半額CP（冬）" src="/media/W1siZiIsIjIwMjQvMTEvMjAvMTNfNDVfNTNfNjU0XzEwOV9Sb3VuZDJfMlVQX0RJU19BRkZfV2Vic2l0ZV8xOTIweDk2MF9KUC5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4NjAwIyJdXQ/109-Round2-2UP_DIS_AFF_Website_1920x960_JP.jpg" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- / スライダー -->
+
+    <!-- メニュー・お知らせ -->
+    <div class="index-information">
+      <!-- お知らせ一覧 -->
+      <section class="index-news">
+        <h2 class="schedule-block-label">NEWS</h2>
+        <ul class="index-news-list common-news-list">
+          <!-- 5 items  -->
+
+          <li>
+              <a href="/premiumshinjuku/news/8631.html">
+                  <time class="common-news-time">2024/12/27</time>
+                  <h3>
+                    <span class="common-list-important">重要</span>
+                    1月28日（火）休館のお知らせ
+                  </h3>
+              </a>
+          </li>
+          <li>
+              <a href="/premiumshinjuku/news/8618.html">
+                  <time class="common-news-time">2024/12/26</time>
+                  <h3>
+                    1月29日(水)エリック・クラプトン『クロスロード・ギター・フェスティヴァル 2023』世良公則氏登壇付き試写会イベント実施決定！
+                  </h3>
+              </a>
+          </li>
+          <li>
+              <a href="/premiumshinjuku/news/8614.html">
+                  <time class="common-news-time">2024/12/20</time>
+                  <h3>
+                    ＜イベント追加決定！＞『松任谷由実 THE JOURNEY 50TH ANNIVERSARY コンサートツアー movie 〜5.1ch/4K〜』特別上映
+                  </h3>
+              </a>
+          </li>
+          <li>
+              <a href="/premiumshinjuku/news/8606.html">
+                  <time class="common-news-time">2024/12/18</time>
+                  <h3>
+                    日本最大級の顧客満足度調査「JCSI」 2024年度・映画館業種で2年連続１０９シネマズが1位獲得！
+                  </h3>
+              </a>
+          </li>
+          <li>
+              <a href="/premiumshinjuku/news/8607.html">
+                  <time class="common-news-time">2024/12/17</time>
+                  <h3>
+                    12/19(木)～『ライオン・キング：ムファサ』アンケートキャンペーン実施決定！
+                  </h3>
+              </a>
+          </li>
+
+        </ul>
+        <div class="common-anchor-arrow">
+          <a class="common-arrow-right" href="/premiumshinjuku/news/">more</a>
+        </div>
+      </section>
+      <!-- / お知らせ一覧 -->
+
+      <!-- メニュー -->
+      <section id="login" class="index-mypage">
+        <!-- ログイン -->
+        <div class="index-login-form">
+          <h2 class="schedule-block-label">MY PAGE</h2>
+          <p class="index-mypage-text">シネマポイント会員向け</p>
+          <a class="index-login-button" href="https://cinema.109cinemas.net/cgi-bin/pc/login.cgi?tsc=X1" target="_blank">
+            <img src="/img/premium/icon-login.png" width="12" height="20" alt="">ログイン
+          </a>
+          <div class="common-anchor-arrow">
+            <a class="common-arrow-right" href="/pointcard.html">シネマポイント会員について</a>
+          </div>
+        </div>
+        <!-- / ログイン -->
+        <!-- サイドメニュー -->
+        <div class="index-submenu">
+          <ul>
+            <li><a href="https://cinema.109cinemas.net/cgi-bin/pc/rsvhst/list_shw.cgi?tsc=X1" target="_blank">購入チケット照会</a></li>
+            <li><a href="/premiumshinjuku/refreshments.html">フード＆ドリンク</a></li>
+            <li><a href="/premiumshinjuku/news/#event">イベント／キャンペーン</a></li>
+            <li><a href="/premiumshinjuku/admission.html#onlineticket">チケット購入方法</a></li>
+            <li><a href="/premiumshinjuku/access.html#businesshour">営業時間／音声案内</a></li>
+            <li><a href="#newsletter">ニュースレター</a></li>
+          </ul>
+        </div>
+        <!-- / サイドメニュー -->
+      </section><!-- #mypage-aside -->
+      <!-- / メニュー -->
+
+    </div><!-- #menu -->
+    <!-- / メニュー・お知らせ -->
+
+    <!-- バナー -->
+    <ul class="index-banners-premium">
+      <li class="index-banner-max banner-shinjuku _only-pc"><a href="/premiumshinjuku/special/"><img src="/img/premium/banner-shinjuku.png" alt="１０９シネマズプレミアム新宿特設ページ" width="" height=""></a></li>
+      <li class="index-banner-max banner-shinjuku _only-sp"><a href="/premiumshinjuku/special/"><img src="/img/premium/banner-shinjuku-sp.png" alt="１０９シネマズプレミアム新宿特設ページ" width="" height=""></a></li>
+      <li class="index-banner-half index-banner-4dx"><a href="/4dx/"><img src="/img/premium/banner-4dx.png" alt="ScreenX" width="" height=""></a></li>
+      <li class="index-banner-half index-banner-saion"><a href="/saion/"><img src="/img/premium/banner-saion.png" alt="SAION" width="" height=""></a></li>
+    </ul>
+    <!-- / バナー -->
+
+    <!-- =========== スケジュール =========== -->
+    <section id="schedule" class="schedule-content-block">
+      <div class="schedule-header">
+        <div class="schedule-block-label">
+          SCHEDULE
+          <div class="common-anchor-arrow">
+            <a class="common-arrow-right" href="https://cinema.109cinemas.net/cgi-bin/pc/site/det.cgi?tsc=X1" target="_blank">チケット購入サイト</a>
+          </div>
+        </div>
+        <h2 class="schedule-content-title">１０９シネマズプレミアム新宿</h2>
+
+
+
+          <p class="schedule-description">
+            ※情報が更新されない場合は<a href="https://cinema.109cinemas.net/cgi-bin/pc/site/det.cgi?tsc=X1" target="_blank">「オンラインチケット購入」のページ</a>からご確認ください。
+          </p>
+
+      </div>
+
+      <div id="calender" class="schedule-calender">
+        <div class="schedule-calender-prev"><button class="prev-btn" disabled="disabled">&lt;</button></div>
+        <div class="viewport">
+          <ul class="flipsnap">
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250104.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250104.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/04</time>(土)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250105.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250105.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/05</time>(日)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250106.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250106.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/06</time>(月)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250107.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250107.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/07</time>(火)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250108.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250108.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/08</time>(水)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250109.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250109.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/09</time>(木)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250110.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250110.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/10</time>(金)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250111.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250111.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/11</time>(土)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250112.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250112.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/12</time>(日)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250113.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250113.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/13</time>(月)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250114.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250114.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/14</time>(火)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250115.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250115.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/15</time>(水)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250116.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250116.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>01/16</time>(木)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item"><time>01/17</time>(金)</li>
+            <li class="item"><time>01/18</time>(土)</li>
+            <li class="item"><time>01/19</time>(日)</li>
+            <li class="item"><time>01/20</time>(月)</li>
+            <li class="item"><time>01/21</time>(火)</li>
+            <li class="item"><time>01/22</time>(水)</li>
+            <li class="item"><time>01/23</time>(木)</li>
+            <li class="item"><time>01/24</time>(金)</li>
+            <li class="item"><time>01/25</time>(土)</li>
+            <li class="item"><time>01/26</time>(日)</li>
+            <li class="item"><time>01/27</time>(月)</li>
+            <li class="item"><time>01/28</time>(火)</li>
+            <li class="item"><time>01/29</time>(水)</li>
+            <li class="item"><time>01/30</time>(木)</li>
+            <li class="item"><time>01/31</time>(金)</li>
+            <li class="item"><time>02/01</time>(土)</li>
+            <li class="item"><time>02/02</time>(日)</li>
+            <li class="item"><time>02/03</time>(月)</li>
+            <li class="item"><time>02/04</time>(火)</li>
+            <li class="item"><time>02/05</time>(水)</li>
+            <li class="item"><time>02/06</time>(木)</li>
+            <li class="item"><time>02/07</time>(金)</li>
+            <li class="item"><time>02/08</time>(土)</li>
+            <li class="item"><time>02/09</time>(日)</li>
+            <li class="item"><time>02/10</time>(月)</li>
+            <li class="item"><time>02/11</time>(火)</li>
+            <li class="item"><time>02/12</time>(水)</li>
+            <li class="item"><time>02/13</time>(木)</li>
+            <li class="item"><time>02/14</time>(金)</li>
+            <li class="item"><time>02/15</time>(土)</li>
+            <li class="item"><time>02/16</time>(日)</li>
+            <li class="item"><time>02/17</time>(月)</li>
+            <li class="item"><time>02/18</time>(火)</li>
+            <li class="item"><time>02/19</time>(水)</li>
+            <li class="item"><time>02/20</time>(木)</li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250221.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250221.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>02/21</time>(金)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250222.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250222.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>02/22</time>(土)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <!--
+              <a href="https://cms.109cinemas.net/premiumshinjuku/schedules/20250223.html?20250104" onclick="showtimetable($(this).parent());return false;">
+              -->
+              <a href="/premiumshinjuku/schedules/20250223.html?20250104" target="#premiumshinjuku" onclick="showtimetable($(this).parent());return false;">
+                <time>02/23</time>(日)
+                <div class="serviceday">
+                </div>
+              </a>
+            </li>
+            <li class="item"><time>02/24</time>(月)</li>
+            <li class="item"><time>02/25</time>(火)</li>
+            <li class="item"><time>02/26</time>(水)</li>
+            <li class="item"><time>02/27</time>(木)</li>
+
+          </ul>
+        </div><!-- .viewport -->
+        <div class="schedule-calender-next"><button class="next-btn">&gt;</button></div>
+      </div><!-- #calender -->
+
+
+      <div id="timetable" class="schedule-timetable">
+        <div class="schedule-timetable-area"></div>
+        <div class="schedule-loading"></div>
+      </div>
+      <div class="movies-annotations">
+        <ul class="movies-annotations-list">
+          <li>青少年の方(18歳未満等対象の劇場が所在する都道府県の青少年保護条例で定める青少年)は、深夜営業及び映画の終映時間が午後11時(大阪府、群馬県、三重県は午後10時）を越える上映回は当該条例の定めにより入場できません。
+            但し、条例が上記と異なる定めをしているときは、条例の定めるところによるものとします。
+            大阪府においては16歳未満の方で保護者同伴でない場合は午後7時を過ぎる上映回にはご入場いただけません。</li>
+          <li>本編開始前には5～15分程度のCF・予告編がございます。予めご了承ください。</li>
+          <li>上映作品・スケジュール・上映シアター番号などは、予告なく変更する場合があります。何卒、ご了承下さい。</li>
+        </ul>
+        <ul class="movies-restricted-list">
+          <li>[L] Late Show Lマークの回はレイトショーとなります。サービス対象外の作品もございます。各劇場の鑑賞料金ページをご確認ください。</li>
+          <li>[PG12] Parental Guidance-12 12歳未満のお客様は、なるべく保護者同伴での鑑賞をお願い致します。</li>
+          <li>[R15+] Restricted-15 15歳以上のお客様がご覧いただけます。</li>
+          <li>[R18+] Restricted-18 18歳以上のお客様がご覧いただけます。</li>
+        </ul>
+      </div>
+    </section>
+    <!-- =========== スケジュール =========== -->
+
+  </main>
+  <!-- / コンテンツラップ -->
+
+  <!-- ピックアップバナー -->
+  <aside class="index-banners index-banners-pickup">
+    <h2 class="schedule-block-label">PICK UP</h2>
+    <ul>
+        <li><a href="https://cp.cinecon.jp/mag/109/202309/" target="_blank"><img src="/img/pickup/bnr_premiumshinjuku-style-book.png" width="220" height="60" alt="109CINEMAS PREMIUM SHINJUKU STYLE BOOK"></a></li>
+        <li><a href="/service/theatrepromotion/"><img src="/img/pickup/bnr_theatrepromotion.jpg" width="220" height="60" alt="劇場広告のご案内"></a></li>
+        <li><a href="/theater_rental/"><img src="/img/pickup/bnr_109theater-rental.jpg" width="220" height="60" alt="109シネマズ シアターレンタル"></a></li>
+		<li><a href="/service/giftticket/"><img src="/img/pickup/bnr_premiumshinjuku-giftticket.png" width="220" height="60" alt="ギフトチケットのご案内"></a></li>
+        <li><a href="https://www.instagram.com/109cinemas/" target="_blank"><img src="/img/pickup/bnr_instagram.jpg" width="220" height="60" alt="109シネマズ公式Instagram"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCFm60SeaHw7X4O11kTxoIVQ" target="_blank"><img src="/img/pickup/bnr_109channel.jpg" width="220" height="60" alt="Youtube 109CINEMAS CHANNEL"></a></li>
+        <li><a href="https://recruit.109cinemas.net/" target="_blank"><img src="/img/pickup/bnr_recruit.jpg" width="220" height="60" alt="採用情報"></a></li>
+        <li><a href="https://109cinemas.net/news/8549.html" target="_blank"><img src="/img/pickup/bnr_disneyplus_1124.jpg" width="220" height="60" alt="今なら2カ月半額キャンペーン"></a></li>
+        <!-- <li><a href="/cp/unext_pickup.html" target="_blank"><img src="/img/pickup/bnr_u-next.gif" width="220" height="60" alt="U-NEXT31日の無料体験で109シネマズで公開中の映画が1本0円"></a></li> -->
+        <li><a href="/cp/alvetheater.html" target="_blank"><img src="/img/pickup/bnr_alvetheater.png" width="220" height="60" alt="AL☆VEシアター"></a></li>
+    </ul>
+  </aside>
+  <!-- / ピックアップバナー -->
+
+  <!-- リンクバナー -->
+  <aside class="index-banners index-banners-links">
+    <h2 class="schedule-block-label">LINKS</h2>
+    <ul>
+      <li><a href="/cp/movieticket.html"><img src="/img/links/bnr_movieticket.jpg" width="220" height="60" alt="ムビチケ"></a></li>
+      <li><a href="/cp/moviewalker.html" target="_blank"><img src="/img/links/moviewalker_yellow.jpg" width="220" height="60" alt="シネコンウォーカー"></a></li>
+      <li><a href="/cp/mashup.html" target="_blank"><img src="/img/links/bnr_mashup.jpg" width="220" height="60" alt="MASH UP!"></a></li>
+    </ul>
+  </aside>
+  <!-- / リンクバナー -->
+
+  <!-- 共通フッター -->
+  <footer class="common-site-footer">
+
+    <!-- ニュースレター -->
+    <section id="newsletter" class="common-newsletter">
+      <div class="common-newsletter-content">
+        <h2>NEWSLETTER</h2>
+        <div class="common-newsletter-info">109シネマズプレミアム新宿の新しい情報、特別なご案内などをお届けいたします。</div>
+        <div class="common-newsletter-subscribe"><a href="/newsletter/">ニュースレターに登録する</a></div>
+      </div>
+    </section>
+    <!-- / ニュースレター -->
+
+    <!-- グローバルメニュー -->
+    <div class="common-navigation common-footer-navigation">
+      <a class="common-navigation-logo" href="/premiumshinjuku/">
+        <img src="/img/premium/shinjuku/logo-premiumshinjuku.png" alt="109CINEMAS PREMIUM SHINJUKU" width="442" height="56">
+      </a>
+      <ul class="common-navigation-list">
+        <li class="common-navigation-index _only-sp"><a href="/premiumshinjuku/">TOP</a></li>
+        <li class="common-navigation-schedule"><a href="/premiumshinjuku/#schedule">SCHEDULE</a></li>
+        <li class="common-navigation-movies"><a href="/premiumshinjuku/movies.html">MOVIES</a></li>
+        <li class="common-navigation-news"><a href="/premiumshinjuku/news/">NEWS</a></li>
+        <li class="common-navigation-experience"><a href="/premiumshinjuku/experience.html">EXPERIENCE</a></li>
+        <li class="common-navigation-theaters"><a href="/premiumshinjuku/theaters.html">THEATERS</a></li>
+        <li class="common-navigation-admission"><a href="/premiumshinjuku/admission.html">PRICE</a></li>
+        <li class="common-navigation-access"><a href="/premiumshinjuku/access.html">ACCESS</a></li>
+        <li class="common-sns-icons"><a class="common-icon-twitter" href="https://twitter.com/109_PREMIUM_SJ" target="_blank">X</a><a class="common-icon-instagram" href="https://www.instagram.com/109cinemas_premium/" target="_blank">instagram</a></li>
+      </ul>
+      <div class="common-sp-submenu _only-sp">
+        <ul>
+          <li><a href="https://cinema.109cinemas.net/cgi-bin/pc/login.cgi?tsc=X1" target="_blank">マイページログイン</a></li>
+          <li><a href="/premiumshinjuku/refreshments.html">フード＆ドリンク</a></li>
+          <li><a href="/pointcard.html">シネマポイント会員</a></li>
+          <li><a href="/premiumshinjuku/news/#event">イベント／キャンペーン</a></li>
+          <li><a href="https://cinema.109cinemas.net/cgi-bin/pc/rsvhst/list_shw.cgi?tsc=X1" target="_blank">購入チケット照会</a></li>
+          <li><a href="/premiumshinjuku/access.html#businesshour">営業時間／音声案内</a></li>
+        </ul>
+        <div class="common-sp-navigation-footer">
+          <div class="common-sns-icons"><a class="common-icon-twitter" href="https://twitter.com/109_PREMIUM_SJ" target="_blank"><img src="/img/premium/icon-x.png" alt="X" width="22" height="18"></a><a class="common-icon-instagram" href="https://www.instagram.com/109cinemas_premium/" target="_blank"><img src="/img/premium/icon-instagram.png" alt="instagram" width="22" height="22"></a></div>
+          <div class="common-select-language"><a href="/premiumshinjuku/" class="common-language-active">JP</a><a href="/en/premiumshinjuku/">EN</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- / グローバルメニュー -->
+
+    <div class="common-pagetop"><a href="#top" class="common-pagetop-scroll">PAGETOP</a></div>
+
+    <div class="common-sitemap">
+
+      <!-- フッターロゴ・劇場セレクト -->
+      <div class="common-footer-logo">
+        <a href="/"><img src="/img/logo-trans.png" width="150" height="35" alt="109CINEMAS"></a>
+        <select class="common-theatre-select" onchange="location.href=value;">
+          <option value="/" selected="">劇場を選ぶ</option>
+          <optgroup label="東北">
+            <option value="/tomiya/">富谷</option>
+          </optgroup>
+            <optgroup label="関東"><option value="/premiumshinjuku/">１０９シネマズプレミアム新宿</option>
+            <option value="/sano/">佐野</option>
+            <option value="/takasaki/">高崎</option>
+            <option value="/shobu/">菖蒲</option>
+            <option value="/kiba/">木場</option>
+            <option value="/futakotamagawa/">二子玉川</option>
+            <option value="/grandberrypark/">グランベリーパーク<!-- (町田) --></option>
+            <option value="/kohoku/">港北</option>
+            <option value="/kawasaki/">川崎</option>
+            <option value="/shonan/">湘南</option>
+            <option value="/movil/">ムービル<!-- (横浜) --></option>
+          </optgroup>
+          <optgroup label="東海">
+            <option value="/nagoya/">名古屋</option>
+            <option value="/yokkaichi/">四日市</option>
+            <option value="/meiwa/">明和</option>
+          </optgroup>
+          <optgroup label="近畿">
+            <option value="/osaka-expocity/">大阪エキスポシティ</option>
+            <option value="/minoh/">箕面</option>
+            <option value="/hatkobe/">HAT神戸</option>
+          </optgroup>
+          <optgroup label="中国">
+            <option value="/hiroshima/">広島</option>
+          </optgroup>
+          <optgroup label="九州">
+            <option value="/saga/">佐賀</option>
+          </optgroup>
+        </select>
+      </div>
+      <!-- / フッターロゴ・劇場セレクト -->
+
+      <!-- / フッターナビ -->
+      <div class="common-footer-nav">
+        <div class="common-footer-nav-inner"><a href="/">ホーム</a> | <a href="/faq/">よくあるご質問</a> | <a href="/contact/">お問い合わせ</a> | <a href="https://recruit.109cinemas.net/" target="_blank">採用情報</a></div>
+      </div>
+      <!-- / フッターナビ -->
+    </div>
+    <!-- #sitemap -->
+
+    <!-- フッターポリシー -->
+    <div class="common-footer-sub">
+      <div class="common-footer-sub-inner"><a href="http://www.tokyu-rec.co.jp/" target="_blank">企業情報（株式会社東急レクリエーション）</a> | <a href="/privacy.html">プライバシーポリシー</a> | <a href="/tokusyo.html">特定商取引法表記</a></div>
+    </div>
+    <div class="common-footer-bottom"><div class="common-footer-copyright">© <span id="copy-year">2023</span> TOKYU RECREATION CO.,LTD.</div></div>
+    <!-- / フッターポリシー -->
+
+  </footer>
+
+
+      <!-- S席A席モーダル --->
+      <div class="schedule-timetable">
+        <div class="schedule-modal-block">
+          <div class="schedule-modal-inner">
+            <h1 class="schedule-modal-title">
+              <time id="modal-date">-</time>
+              <span id="modal-week">-</span>
+              <button class="schedule-modal-close">close</button>
+            </h1>
+            <article>
+              <header>
+                <a href="" target="_top">
+                  <h2 id="modal-title">-</h2>
+                  <p lang="en" id="modal-title-eng">-</p>
+                </a>
+                <div class="age" id="modal-age">-</div>
+              </header>
+              <div class="schedule-modal-content">
+                <div class="schedule-modal-image">
+                  <img id="modal-screen-img" src="" width="360" height="360" alt="">
+                </div>
+                <div class="schedule-modal-information">
+                  <p class="schedule-modal-text">ご鑑賞エリアをお選びください</p>
+                  <ul>
+                    <li>
+                      <h4>
+                        <img src="/img/premium/class-s.png" width="75" height="61" alt="CLASS S" class="_only-pc">
+                        <img src="/img/premium/class-s-sp.png" width="81" height="20" alt="CLASS S" class="_only-sp">
+                      </h4>
+                      <div class="schedule-modal-description">
+                        各シアターの中央に位置する最上級のプレミアムシート。鑑賞後の特別ラウンジもご用意。<br><a href="/premiumshinjuku/theaters.html#premium-seat">詳しくはこちら</a>
+                      </div>
+                      <a id="modal-seet-s" class="schedule-modal-time">
+
+                      </a>
+                    </li>
+                    <li>
+                      <h4>
+                        <img src="/img/premium/class-a.png" width="75" height="61" alt="CLASS A" class="_only-pc">
+                        <img src="/img/premium/class-a-sp.png" width="81" height="20" alt="CLASS A" class="_only-sp">
+                      </h4>
+                      <div class="schedule-modal-description">
+                        柔らかく快適な座り心地のプレミアムシート。ゆったりくつろぎながら映画をお楽しみください。<br><a href="/premiumshinjuku/theaters.html#premium-seat">詳しくはこちら</a>
+                      </div>
+                      <a id="modal-seet-a" class="schedule-modal-time">
+
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <div class="schedule-prev-arrow">
+              <button class="common-arrow-left">戻る</button>
+            </div>
+          </div>
+          <div class="schedule-modal-close-bg"></div>
+        </div><!-- /.schedule-modal-block -->
+      </div>
+
+</body>
+</html>
