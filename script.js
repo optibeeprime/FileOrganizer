@@ -2,14 +2,12 @@ let slideIndex = 0;
 let autoSlideTimeout;
 
 function showSlides(n, userTriggered = false) {
-    let slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
 
     if (n !== undefined) {
         slideIndex = n;
     } else {
         slideIndex++;
-    }
-
     if (slideIndex >= slides.length) {
         slideIndex = 0;
     }
@@ -21,18 +19,17 @@ function showSlides(n, userTriggered = false) {
     slides.forEach(slide => slide.style.display = 'none');
     slides[slideIndex].style.display = 'block';
 
-    if (userTriggered) {
-        clearTimeout(autoSlideTimeout);
+    if (!userTriggered) {
+        autoSlideTimeout = setTimeout(() => showSlides(), 3000); // 3秒ごとに次の画像へ
     }
-
-    autoSlideTimeout = setTimeout(() => showSlides(undefined, false), 3000); // 3秒ごとに次の画像へ
 }
 
 function plusSlides(n) {
+    clearTimeout(autoSlideTimeout);
     showSlides(slideIndex + n, true);
 }
 
-// 初期化処理を追加
+// 初期化処理
 document.addEventListener('DOMContentLoaded', () => {
     showSlides(slideIndex, false);
 });
