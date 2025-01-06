@@ -25,27 +25,21 @@ header {
     overflow: hidden;
 }
 
-.slide img {
-    width: 100%; /* コンテナの幅に合わせる */
-    height: auto; /* アスペクト比を保つ */
-    max-width: 80%; /* 画像の最大幅を80%に制限（調整可能） */
-    margin: 0 auto; /* 画像をコンテナ中央に配置 */
-    display: block; /* 画像をブロック要素として扱う */
+.slide {
+    display: none;
+    width: 100%;
 }
 
 .slide img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
     animation-name: fade;
     animation-duration: 1s;
-}
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
 }
 
 @keyframes fade {
@@ -64,7 +58,6 @@ header {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
 }
 
@@ -73,9 +66,15 @@ header {
     border-radius: 3px 0 0 3px;
 }
 
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
 h1, h2, p, a {
     color: #d4af37;
 }
