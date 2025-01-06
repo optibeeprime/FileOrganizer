@@ -21,14 +21,14 @@ header {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 300px;
+    height: auto;
     overflow: hidden;
 }
 
 .slide {
     display: none;
     width: 100%;
-    height: 100%;
+    height: auto%;
 }
 
 .slide img {
