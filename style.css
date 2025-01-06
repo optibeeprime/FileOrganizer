@@ -21,7 +21,6 @@ header {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: auto;
     overflow: hidden;
 }
 
@@ -51,24 +50,18 @@ header {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
     padding: 16px;
-    margin-top: -22px;
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    user-select: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev {
     left: 0;
-    border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
