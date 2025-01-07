@@ -1,4 +1,4 @@
-let slideIndex = 1;  // 初期スライドを1にセット
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -17,13 +17,13 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = 'block';
 }
 
-// 自動スライド切り替えを維持したい場合
 function automaticSlideshow() {
     slideIndex++;
+    let slides = document.querySelectorAll('.slide');
     if (slideIndex > slides.length) { slideIndex = 1; }
     slides.forEach(slide => slide.style.display = 'none');
     slides[slideIndex - 1].style.display = 'block';
-    setTimeout(automaticSlideshow, 3000); // 3秒ごとに
+    setTimeout(automaticSlideshow, 3000);
 }
 
-automaticSlideshow(); // 自動スライドショー開始
+automaticSlideshow();
