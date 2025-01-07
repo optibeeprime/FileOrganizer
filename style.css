@@ -1,71 +1,22 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #1e1e1e;
-    padding: 30px 20px;
-    text-align: center;
-    border-bottom: 1px solid #333;
-}
-
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: auto;
     overflow: hidden;
 }
 
-.slide {
-    display: none;
-    width: 100%;
-    height: auto;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    max-width: 80%; /* 画像の最大幅を80%に制限（調整可能） */
-    margin: 0 auto; /* 画像をコンテナ中央に配置 */
-    display: block; /* 画像をブロック要素として扱う */
-}
-
-h1, h2, p, a {
-    color: #d4af37;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 10px;
-    margin-top: -22px;
     color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 3px;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
 }
 
 .next {
