@@ -5,6 +5,7 @@ body {
     background-color: #121212;
     color: #ffffff;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -21,51 +22,19 @@ header {
 .slideshow-container {
     position: relative;
     max-width: 100%;
+    height: 300px;
     overflow: hidden;
 }
 
 .slide {
     display: none;
     width: 100%;
+    height: 100%;
 }
 
 .slide img {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1s;
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.next {
-    right: 0;
-}
-
-.prev {
-    left: 0;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
 }
 
 h1, h2, p, a {
