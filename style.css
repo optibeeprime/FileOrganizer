@@ -5,6 +5,25 @@ body {
     background-color: #121212;
     color: #ffffff;
 }
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #444;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
