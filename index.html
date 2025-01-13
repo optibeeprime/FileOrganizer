@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>ファイル整理アプリ</h1>
-            <nav>
-                <a href="https://optibeeprime.github.io/File-app-explanation/" class="tab" target="_blank">使い方</a>
-            </nav>                
-        </header>
+    <header>
+        <div class="logo">ファイル整理アプリ</div>
+        <nav>
+            <ul>
+                <li><a href="https://optibeeprime.github.io/FileOrganizer/">ホーム</a></li>
+                <li><a href="https://optibeeprime.github.io/File-app-explanation/">使い方</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="download-section">
+            <h1>ダウンロード</h1>
+            <a href="your-download-link" class="download-button">Windows</a>
+        </section>
+
         <section>
             <div class="slideshow-container">
                 <div class="slide">
@@ -25,15 +34,14 @@
                 <div class="slide">
                     <img src="setting.png" alt="Image 3">
                 </div>
-                <!-- 左右の矢印ボタンを追加 -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- 左矢印 -->
-                <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- 右矢印 -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <h2>概要</h2>
-            <p>このアプリは様々なファイル(画像、音楽、動画、ドキュメントなど)を自動的にフォルダに<br>分類します。
-                <br>また、重複ファイルを検出することも可能です。</p>
+            <p>このアプリは様々なファイル(画像、音楽、動画、ドキュメントなど)を自動的にフォルダに<br>分類します。<br>また、重複ファイルを検出することも可能です。</p>
         </section>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
